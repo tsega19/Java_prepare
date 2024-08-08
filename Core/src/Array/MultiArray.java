@@ -3,7 +3,7 @@ package Array;
 /**
  *          multidimensional ARRAY
  */
-public class Exercise2 {
+public class MultiArray {
     public static void main(String[] args) {
         int [] [] matrix1;
         matrix1 = new int[3][4];

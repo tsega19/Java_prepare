@@ -7,7 +7,7 @@
  */
 package Array;
 import java.util.Arrays;
-public class Exercise1 {
+public class SingleArray {
 //    Declaring an array
 static int[] test1;
     /**  At this point we can't add value because it is not initialized yet.
