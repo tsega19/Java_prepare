@@ -1,0 +1,98 @@
+Certainly! Here are two additional Java questions related to financial applications that can help you prepare for a payment gateway developer role:
+
+---
+
+**Question 1:**
+
+You are building a **Payment** class for an online payment gateway. The class should handle payments made by customers.
+
+**Requirements:**
+- The **Payment** class should have the following attributes:
+  - `paymentId` (String): A unique identifier for the payment.
+  - `amount` (double): The total amount of the payment.
+  - `currency` (String): The currency in which the payment is made (e.g., "USD", "EUR").
+  - `paymentDate` (LocalDate): The date the payment was made.
+
+**Tasks:**
+1. **Constructor**:
+   - Write a constructor that initializes all the attributes of the **Payment** class.
+
+2. **Methods**:
+   - Write a method `convertCurrency(double conversionRate)` that converts the payment amount to a different currency based on the provided conversion rate. The method should return the converted amount.
+   - Write a method `displayPaymentDetails()` that prints out all the details of the payment.
+
+3. **Object Creation**:
+   - Create an object of the **Payment** class in the `main` method and initialize it with sample data.
+   - Display the payment details using the `displayPaymentDetails()` method.
+   - Convert the payment amount to another currency (e.g., convert from USD to EUR with a conversion rate of 0.85) and print the converted amount.
+
+---
+
+**Sample Output:**
+
+For a payment with `paymentId` "PAY12345", amount $100.00, in "USD" made on "2024-08-19", the output should be:
+
+```
+Payment ID: PAY12345
+Amount: $100.0
+Currency: USD
+Payment Date: 2024-08-19
+Converted Amount (USD to EUR): €85.0
+```
+
+---
+
+**Key Concepts Tested:**
+- Working with dates using `LocalDate` in Java.
+- Implementing financial calculations (currency conversion).
+- Understanding of constructors and methods in financial contexts.
+
+---
+
+**Question 2:**
+
+You are developing a **Transaction** class for an e-commerce platform. This class will represent a transaction that involves a purchase made by a customer.
+
+**Requirements:**
+- The **Transaction** class should have the following attributes:
+  - `transactionId` (String): A unique identifier for the transaction.
+  - `amount` (double): The amount involved in the transaction.
+  - `paymentMethod` (String): The method used for the payment (e.g., "Credit Card", "PayPal").
+  - `status` (String): The status of the transaction (e.g., "Pending", "Completed", "Failed").
+
+**Tasks:**
+1. **Constructor**:
+   - Write a constructor that initializes all the attributes of the **Transaction** class.
+
+2. **Methods**:
+   - Write a method `processTransaction()` that changes the status of the transaction from "Pending" to "Completed" if the payment method is valid (e.g., non-empty and not null). Otherwise, set the status to "Failed".
+   - Write a method `isHighValueTransaction(double threshold)` that returns `true` if the transaction amount exceeds a given threshold (e.g., $1000), and `false` otherwise.
+
+3. **Object Creation**:
+   - Create an object of the **Transaction** class in the `main` method and initialize it with sample data.
+   - Process the transaction using the `processTransaction()` method and print the transaction status.
+   - Check if the transaction is a high-value transaction by using the `isHighValueTransaction()` method and print the result.
+
+---
+
+**Sample Output:**
+
+For a transaction with `transactionId` "TXN67890", amount $1200.00, payment method "Credit Card", and initial status "Pending", the output should be:
+
+```
+Transaction ID: TXN67890
+Amount: $1200.0
+Payment Method: Credit Card
+Initial Status: Pending
+Processed Status: Completed
+Is High-Value Transaction: true
+```
+
+---
+
+**Key Concepts Tested:**
+- Conditional logic for transaction processing.
+- Implementation of methods with specific business rules.
+- Handling transaction status changes and high-value checks in financial applications.
+
+These questions are designed to simulate real-world scenarios in payment gateway development, focusing on financial transactions, payment processing, and currency handling.
