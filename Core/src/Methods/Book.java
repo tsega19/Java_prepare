@@ -6,8 +6,8 @@ public class Book {
     double price;
   // Removed 'static' from here
 
-    public Book(String title, String author, double price) {
-        this.title = title;
+    public Book(String titles, String author, double price) {
+ title = titles;
         this.author = author;
         this.price = price;
     }
