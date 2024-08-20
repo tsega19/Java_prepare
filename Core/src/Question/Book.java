@@ -12,10 +12,26 @@ public class Book {
         this.author = author;
         this.price = price;
     }
+    public Book(String titles, String authors){
+        this.title = titles;
+        this.author = authors;
+    }
 
     public boolean  displayInfo(){
+       if(price.notEmpty){
+           System.out.println(true);
+       }
+       else {
+           System.out.println(false);
+       }
+       return true;
+    }
 
-        return true;
+    public static void main(String[] args) {
+        Book b = new Book("emengua", "Birhaunu", 23.4);
+        Book b1 = new Book("emengua", "burhanu");
+        b.displayInfo();
+        b1.displayInfo();
     }
 }
 
