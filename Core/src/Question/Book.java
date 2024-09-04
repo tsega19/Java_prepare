@@ -18,12 +18,12 @@ public class Book {
     }
 
     public boolean  displayInfo(){
-       if(price.notEmpty){
-           System.out.println(true);
-       }
-       else {
-           System.out.println(false);
-       }
+//       if(price){
+//           System.out.println(true);
+//       }
+//       else {
+//           System.out.println(false);
+//       }
        return true;
     }
 
