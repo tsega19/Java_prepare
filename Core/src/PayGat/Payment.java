@@ -48,7 +48,8 @@ public class Payment {
     public static void main(String[] args) {
       UUID paymentId = UUID.randomUUID();
       double amount = 21.2;
-      Date paymentDate = new Date(2024-1900, 0,1);
+      @SuppressWarnings("deprecation")
+    Date paymentDate = new Date(2024-1900, 0,1);
       Payment p = new Payment(paymentId, amount, "USD", paymentDate);
 
     p.displayPayment();
